@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'Plumbfull';
+  src: url('fonts/Plumbfull.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'mikadoBold';
+  src: url('./fonts/MikadoBold_DEMO.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #023c40;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.heading1 {
+  font-family: plump regular;
+  font-size: 38px;
+  color: white;
+}
+
+.heading1-description {
+  font-family: poppins;
+  color: white;
+  font-size: 25px;
+}
+
+.container {
+  width: 400px;
+  height: 100vh;
+}
+
+.scale-box {
+  border: .5px solid #348134;
+  border-radius: 30px;
+  padding: 50px 30px 10px 30px;
+  background-color: #f8c8dc4a;
+  background-image: url(bhattified.png);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 30px;
+  width: 350px;
+  height: 200px;
+}
+
+
+.scale-box2 {
+  border: .5px solid #348134;
+  border-radius: 30px;
+  padding: 30px 30px 10px 30px;
+  background-color: #f8c8dc4a;
+  background-image: url(bhattified.png);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 30px;
+  width: 350px;
+  text-align: center;
+  
+}
+
+.scale-box2 {
+  font-family: 'mikadoBold', Arial, sans-serif !important;
+}
+
+.scale-box2 h2{
+  margin-bottom: 50px;
+
+}
+
+.values-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.time {
+  color: white;
+  font-family: 'plumpfull';
+  font-size: 20px;
+  letter-spacing: .5px;
+  font-family: 'mikadoBold', Arial, sans-serif !important;
+}
+
+.score-in-words {
+  color: #F6FC0B;
+  font-family: poppins;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  text-align: left;
+  font-family :Verdana, Geneva, Tahoma, sans-serif;
+  /* font-weight: bolder; */
+}
+
+.now-score {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: yellow;
+  padding: 10px 12px;
+  border: .5px solid green;
+  border-radius: 50px;
+}
+
+.yesterday-score {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: yellow;
+  padding: 10px 12px;
+  border: .5px solid green;
+  border-radius: 50px;
+}
+
+.last-week-score {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: yellow;
+  padding: 10px 12px;
+  border: .5px solid green;
+  border-radius: 50px;
+}
+
+.last-month-score {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: yellow;
+  padding: 10px 12px;
+  border: .5px solid green;
+  border-radius: 50px;
+}
+
+.meter {
+  text-align: center;
+  position: relative;
+}
+
+.scale {
+  position: relative;
+  margin-left: 30px;
+  width: 300px;
+  height: 150px;
+  border-radius: 150px 150px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.gradient-arc {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.needle{
+  position: absolute;
+  width: 4px; 
+  height: 150px; 
+  background: red;
+  left: 50%;
+  bottom: 0;
+  transform-origin: bottom;
+  transform: rotate(-90deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.needle-origin {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #ffd700;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  left: calc(50% - 15px);
+  bottom: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.score {
+  position: absolute;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-radius: 50px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-size: 16px;
+  transform: translate(-50%, -50%);
+  top: 5px;
+  left: 24px;
+}
+
+input, button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+.bhattified {
+    text-align: center;
+    background-color: #f8c8dc4a;
+    width: 100px;
+    margin-left: 150px;
+    padding: 6px;
+    border-radius: 10px;
+    color: white;
+}
